@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func main() {
+	var numero1 int
+	var numero2 int
+	var numero3 int
+	fmt.Print("Insira o primeiro número: ")
+	fmt.Scan(&numero1)
+	fmt.Print("Insira o segundo número: ")
+	fmt.Scan(&numero2)
+	fmt.Print("Insira o terceiro número: ")
+	fmt.Scan(&numero3)
+	var resultado int = numero1 + numero2 + numero3
+	fmt.Print("O resultado da soma dos três números é ", resultado)
+
+}
