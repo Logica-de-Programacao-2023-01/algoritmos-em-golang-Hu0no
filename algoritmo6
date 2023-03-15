@@ -1,0 +1,10 @@
+package main
+
+import "fmt"
+
+func main() {
+	var s float64
+	fmt.Print("Insira o valor atual do salário: ")
+	fmt.Scan(&s)
+	fmt.Print("O salário com o ajuste de 15% é igual a: ", s*1.15)
+}
