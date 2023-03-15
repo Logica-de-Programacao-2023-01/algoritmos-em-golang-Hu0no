@@ -1,0 +1,10 @@
+package main
+
+import "fmt"
+
+func main() {
+	var p float64
+	fmt.Print("Insira seu peso em quilos: ")
+	fmt.Scan(&p)
+	fmt.Print("Seu peso em libras é: ", p*2.20462)
+}
