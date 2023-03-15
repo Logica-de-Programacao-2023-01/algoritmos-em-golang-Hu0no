@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n int
+	fmt.Print("Insira um número inteiro: ")
+	fmt.Scan(&n)
+	var s int = n + 1
+	var a int = n - 1
+	fmt.Println("O sucessor do seu número é: ", s)
+	fmt.Println("O antecessor do seu número é: ", a)
+}
