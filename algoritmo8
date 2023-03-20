@@ -10,5 +10,5 @@ func main() {
 	fmt.Print("Insira o valor da diária: ")
 	fmt.Scan(&v)
 	var r float64 = d * v
-	fmt.Print("O seu salário é: ", r)
+	fmt.Print("O salário correspondente é: ", r)
 }
