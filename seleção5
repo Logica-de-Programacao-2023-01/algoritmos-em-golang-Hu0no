@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x int
+	fmt.Print("Insira um número inteiro: ")
+	fmt.Scan(&x)
+	if x == 0 {
+		fmt.Print(x, " não é múltiplo de 3 e de 5 ao mesmo 
+tempo")
+	} else if x%3 == 0 && x%5 == 0 {
+		fmt.Print(x, " é múltiplo de 3 e de 5 ao mesmo tempo")
+	} else {
+		fmt.Print(x, " não é múltiplo de 3 e de 5 ao mesmo 
+tempo")
+	}
+}
+
