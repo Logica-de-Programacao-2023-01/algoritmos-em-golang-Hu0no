@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x int
+	var y int
+	var z int
+	fmt.Print("Insira o primeiro número inteiro: ")
+	fmt.Scan(&x)
+	fmt.Print("Insira o segundo número inteiro: ")
+	fmt.Scan(&y)
+	fmt.Print("Insira o terceiro número inteiro: ")
+	fmt.Scan(&z)
+	if x < y && x < z {
+		fmt.Print("O menor número é ", x)
+	} else if y < x && y < z {
+		fmt.Print("O menor número é ", y)
+	} else {
+		fmt.Print("O menor número é ", z)
+	}
+}
+

@@ -1,0 +1,28 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 float64
+	var n2 float64
+	var n3 float64
+	fmt.Print("Insira o primeiro número: ")
+	fmt.Scan(&n1)
+	fmt.Print("Insira o segundo número: ")
+	fmt.Scan(&n2)
+	fmt.Print("Insira o terceiro número: ")
+	fmt.Scan(&n3)
+	if n1 < n2 && n2 < n3 && n1 < n3 {
+		fmt.Print("A lista dos números inseridos em ordem crescente é: ", n1, n2, n3)
+	} else if n1 < n2 && n2 > n3 && n3 > n1 {
+		fmt.Print("A lista dos números inseridos em ordem crescente é: ", n1, n3, n2)
+	} else if n1 > n2 && n2 < n3 && n1 < n3 {
+		fmt.Print("A lista dos números inseridos em ordem crescente é: ", n2, n1, n3)
+	} else if n2 < n1 && n1 > n3 && n2 < n3 {
+		fmt.Print("A lista dos números inseridos em ordem crescente é: ", n2, n3, n1)
+	} else if n3 < n1 && n1 > n2 && n3 < n1 {
+		fmt.Print("A lista dos números inseridos em ordem crescente é: ", n3, n2, n1)
+	} else {
+		fmt.Print("A lista dos números inseridos em ordem crescente é: ", n3, n1, n2)
+	}
+}

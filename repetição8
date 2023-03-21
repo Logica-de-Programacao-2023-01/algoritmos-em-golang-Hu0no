@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x uint
+	fmt.Print("Insira um número inteiro positivo: ")
+	fmt.Scan(&x)
+	i := x
+	fmt.Println("Os divisores de ", x, " são: ")
+	for i > 0 {
+		if x%i == 0 {
+			fmt.Println(i)
+		}
+		i--
+	}
+}

@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x int
+	i := 1
+	fmt.Print("Insira um número: ")
+	fmt.Scan(&x)
+	fmt.Println("Tabuada de ", x, ": ")
+	for i < 11 {
+		fmt.Println(x * i)
+		i++
+	}
+}

@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+	var s float64
+	fmt.Print("Insira o salário atual: ")
+	fmt.Scan(&s)
+	var r float64
+	if s < 1000 {
+		r = s * 1.10
+	} else {
+		r = s * 1.05
+	}
+	fmt.Print("O salário com aumento é ", r)
+}

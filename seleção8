@@ -1,0 +1,25 @@
+package main
+
+import "fmt"
+
+func main() {
+	var d uint
+	fmt.Print("Insira um número de 1 a 7: ")
+	fmt.Scan(&d)
+	switch d {
+	case 1:
+		fmt.Print("Domingo é o dia da semana correspondente ao seu número.")
+	case 2:
+		fmt.Print("Segunda-feira é o dia da semana correspondente ao seu número")
+	case 3:
+		fmt.Print("Terça-feira é o dia da semana correspondente ao seu número")
+	case 4:
+		fmt.Print("Quarta-feira é o dia da semana correspondente ao seu número")
+	case 5:
+		fmt.Print("Quinta-feira é o dia da semana correspondente ao seu número")
+	case 6:
+		fmt.Print("Sexta-feira é o dia da semana correspondente ao seu número")
+	case 7:
+		fmt.Print("Sábado é o dia da semana correspondente ao seu número")
+	}
+}
